@@ -1,0 +1,6 @@
+build/**
+*~
+*.sublime-workspace
+.tags
+.tags_sorted_by_file
+.DS_Store

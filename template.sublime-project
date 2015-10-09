@@ -1,0 +1,50 @@
+{
+  "build_systems":
+  [
+    {
+      "cmd":
+      [
+        "cmake",
+        "-G",
+        "Ninja",
+        "-DCMAKE_BUILD_TYPE=Debug",
+        ".."
+      ],
+      "file_regex": "^../([^:\n]*):([0-9]+):?([0-9]+)?:? (.*)$",
+      "name": "cmake",
+      "working_dir": "${project_path}/build"
+    }
+  ],
+  "folders":
+  [
+    {
+      "file_exclude_patterns":
+      [
+        "*~",
+        "*.tar.gz",
+        ".tags",
+        ".tags_sorted_by_file"
+      ],
+      "folder_exclude_patterns":
+      [
+        ".git",
+        "autom4te.cache"
+      ],
+      "name": "template",
+      "path": "."
+    }
+  ],
+  "settings":
+  {
+    "draw_white_space": "all",
+    "ensure_newline_at_eof_on_save": true,
+    "rulers":
+    [
+      70,
+      80
+    ],
+    "tab_size": 2,
+    "translate_tabs_to_spaces": true,
+    "trim_trailing_white_space_on_save": true
+  }
+}
